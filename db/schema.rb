@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_23_123835) do
+ActiveRecord::Schema.define(version: 2020_11_23_132354) do
 
   create_table "appointments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
@@ -36,6 +36,17 @@ ActiveRecord::Schema.define(version: 2020_11_23_123835) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
+  create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "customer_name", null: false
+    t.string "customer_occupation", null: false
+    t.string "position"
+    t.text "note"
+    t.bigint "appointment_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["appointment_id"], name: "index_profiles_on_appointment_id"
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -53,4 +64,5 @@ ActiveRecord::Schema.define(version: 2020_11_23_123835) do
   add_foreign_key "appointments", "users"
   add_foreign_key "comments", "appointments"
   add_foreign_key "comments", "users"
+  add_foreign_key "profiles", "appointments"
 end

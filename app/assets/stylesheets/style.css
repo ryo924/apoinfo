@@ -82,6 +82,56 @@ a {
 .appointment{
   margin: 0px 20px;
 }
+.page-heading {
+  font-size: 30px;
+  margin-bottom: 28px;
+}
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 161px);
+}
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px grey;
+  margin: 20px;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+  background-color: #f1f8fe;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text-flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-implementor {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: underline;
+}
 
 /* フッター */
 
@@ -139,6 +189,9 @@ position: relative;
 
 .form__wrapper{
   min-height: calc(100vh - 161px);
+}
+.form__string {
+  width: 30%;
 }
 .form__text {
   width: 50%;

@@ -82,6 +82,69 @@ a {
 .appointment{
   margin: 0px 20px;
 }
+.page-heading {
+  font-size: 30px;
+  margin-bottom: 28px;
+}
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 161px);
+}
+.card {
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px grey;
+  margin: 20px;
+}
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 20px;
+  background-color: #f1f8fe;
+}
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+.card-text-flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-implementor {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: underline;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
+}
 
 /* フッター */
 
@@ -140,6 +203,9 @@ position: relative;
 .form__wrapper{
   min-height: calc(100vh - 161px);
 }
+.form__string {
+  width: 30%;
+}
 .form__text {
   width: 50%;
 }
@@ -165,4 +231,69 @@ position: relative;
 .form__btn:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+/* 詳細ページ */
+
+.appointment__wrapper{
+  min-height: calc(100vh - 161px);
+}
+.appointment__hedding{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.appointment__user{
+  display: block;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  text-decoration: underline;
+}
+.appointment__detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail__title__2{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f1f8fe;
+  padding: 0px 200px;
+}
+.detail__title__3{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f1f8fe;
+  padding: 0px 190px;
+}
+.detail__title__4{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f1f8fe;
+  padding: 0px 180px;
+}
+.detail__message{
+  font-size: 20px;
+}
+.appointment__manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.appointment__btn{
+  display: block;
+  padding: 0.4em 1.6em;
+  font-size: 0.4em;
+  color: #999;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #999 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 4px;
+}
+.appointment__btn:hover{
+  color: #fff;
+  background: #999;
 }

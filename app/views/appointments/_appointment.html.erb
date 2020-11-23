@@ -1,0 +1,18 @@
+<section class="card">
+  <div class="card-content">
+    <h1 class="card-title">
+    <p><%= appointment.date %></p>
+    </h1>
+    <h1 class="card-title">
+    <p><%= appointment.title %></p>
+    </h1>
+    <div class="card-text-flex">
+    <div class="card-text"><%= appointment.company %></div>
+    <div class="card-text"><%= appointment.relation.name %></div>
+    </div>
+    <div class="card-implementor"><%= "作成者:#{appointment.user.name}" %></div>
+  </div>
+  <div class="card-link">
+    <%= link_to "詳細表示", appointment_path(appointment) %>
+  </div>
+</section>

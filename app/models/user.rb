@@ -11,4 +11,6 @@ class User < ApplicationRecord
       
   validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i, message: "Input correctly"}, length: { minimum: 8}
 
+  has_many :appointments
+
 end

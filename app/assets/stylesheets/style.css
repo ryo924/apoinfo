@@ -132,6 +132,19 @@ a {
   text-align: center;
   text-decoration: underline;
 }
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #0090aa;
+}
 
 /* フッター */
 
@@ -218,4 +231,53 @@ position: relative;
 .form__btn:hover {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+/* 詳細ページ */
+
+.appointment__wrapper{
+  min-height: calc(100vh - 161px);
+}
+.appointment__hedding{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.appointment__user{
+  display: block;
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  text-decoration: underline;
+}
+.appointment__detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail__title__2{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f1f8fe;
+  padding: 0px 200px;
+}
+.detail__title__3{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f1f8fe;
+  padding: 0px 190px;
+}
+.detail__title__4{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f1f8fe;
+  padding: 0px 180px;
+}
+.detail__message{
+  font-size: 20px;
+}
+.appointment__manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
 }

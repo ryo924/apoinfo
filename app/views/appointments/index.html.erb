@@ -1,0 +1,45 @@
+<main class="main">
+    <%# if user_signed_in? %>
+    <div class="wrapper">
+        <%#= form_with(url: search_appointments_path, local: true, method: :get, class: "search-form") do |form| %>
+          <%#= form.text_field :keyword, placeholder: "取引先名で検索", class: "search-input" %>
+          <%#= form.submit "検索", class: "search-btn" %>
+        <%# end %>
+      <div class="appointment">
+        アポイント一覧
+      </div>
+        <div class="card-flex">
+        <%#= render partial: 'appointment', collection: @appointments %>
+        </div>
+    </div>
+    <%# else %>
+      <div class="wrapper">
+        <div class="top">
+          <h1>ApoInfo</h1>
+          <div class="container">
+            <div class="row">
+              <div class="first-left p-1 col-md-1">
+                <h2>Appointment</h2>
+                <h3>アポイント管理</h3>
+                <p>顧客とのアポイントを記録</p>
+                <p>アポイントに紐づく顧客プロフィールを記録</p>
+              </div>
+              <div class="first-right p-1 col-md-1">
+                <img src="/assets/appointment.png" alt="Top1">
+              </div>
+            </div>
+            <div class="row">
+              <div class="second-left p-1 col-md-1">
+                <img src="/assets/information.png" alt="Top2"%>
+              </div>
+              <div class="second-right p-1 col-md-1">
+                <h2>Information</h2>
+                <h3>情報共有</h3>
+                <p>顧客とのアポイントを一覧表示</p>
+                <p>同僚・上司にアポイント情報を共有</p>
+                <p>アポイントの際に有用な情報をコメントで共有</p>
+              </div>
+            </div>
+          </div>
+    <%# end %>
+</main>

@@ -7,8 +7,8 @@
       <%= link_to "作成者： #{@appointment.user.name}", root_path, class: :appointment__user %>
       <% if current_user == @appointment.user %>
         <div class="appointment__manage">
-          <%#= link_to "編集する", edit_schedule_path(@schedule), class: :prototype__btn %>
-          <%#= link_to "削除する", schedule_path(@schedule), method: :delete, class: :prototype__btn %>
+          <%= link_to "編集する", edit_appointment_path(@appointment), class: :appointment__btn %>
+          <%= link_to "削除する", appointment_path(@appointment), method: :delete, class: :appointment__btn %>
         </div>
       <% end %>
       <div class="appointment__body">

@@ -8,7 +8,7 @@ class CreateAppointments < ActiveRecord::Migration[6.0]
       t.string :place,        null: false
       t.text :purpose,        null: false
       t.integer :relation_id, null: false
-      t.references :user
+      t.references :user, foreign_key: true
       t.timestamps
     end
   end

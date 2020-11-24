@@ -16,7 +16,23 @@ class ProfilesController < ApplicationController
   end
 
   def show
+    @appointment = Appointment.find(params[:appointment_id])
     @profile = Profile.find(params[:id])
+  end
+
+  def edit
+    @appointment = Appointment.find(params[:appointment_id])
+    @profile = Profile.find(params[:id])
+  end
+
+  def update
+    @appointment = Appointment.find(params[:appointment_id])
+    @profile = Profile.find(params[:id])
+    if @profile.update(profile_params)
+      redirect_to appointment_profile_path(@profile)
+    else
+      render :edit
+    end
   end
 
   private

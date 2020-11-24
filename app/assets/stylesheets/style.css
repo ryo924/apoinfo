@@ -323,6 +323,10 @@ position: relative;
 .profile__wrapper{
   min-height: calc(100vh - 161px);
 }
+.profile_edit{
+  display: flex;
+  padding: 15px 0px;
+}
 .table{
   border-collapse: collapse;
   margin-bottom: 32px;
@@ -343,10 +347,4 @@ position: relative;
   border-collapse: collapse;
   width: 70%;
   padding: 16px 8px;
-}
-.user__card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
 }

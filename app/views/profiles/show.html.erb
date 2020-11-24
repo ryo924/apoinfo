@@ -1,0 +1,32 @@
+<div class="main">
+  <div class="inner">
+    <div class="profile__wrapper">
+      <h2 class="page-heading">
+        <%= "顧客プロフィール詳細"%>
+      </h2>
+      <div class="profile_edit">
+          <%#=  %>
+      </div>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th class="table__col1">氏名</th>
+            <td class="table__col2"><%= "#{@profile.customer_name}" %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">所属</th>
+            <td class="table__col2"><%= @profile.customer_occupation %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">役職</th>
+            <td class="table__col2"><%= @profile.position %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">備考</th>
+            <td class="table__col2"><%= @profile.note %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

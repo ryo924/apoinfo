@@ -15,6 +15,10 @@ class ProfilesController < ApplicationController
     end
   end
 
+  def show
+    @profile = Profile.find(params[:id])
+  end
+
   private
   def profile_params
     params.require(:profile).permit(:customer_name, :customer_occupation, :position, :note).merge(appointment_id: params[:appointment_id])

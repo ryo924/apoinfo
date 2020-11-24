@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root to: "appointments#index"
   resources :appointments do
     resources :comments, only: :create
+    resources :profiles, only: [:new, :create]
   end
 end

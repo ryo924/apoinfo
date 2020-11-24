@@ -5,6 +5,6 @@ class Profile < ApplicationRecord
     validates :customer_occupation
   end
 
-  belongs_to :schedule
+  belongs_to :appointment
 
 end

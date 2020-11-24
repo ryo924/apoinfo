@@ -1,0 +1,29 @@
+<%= form_with model: [@appointment, @profile], local: true do |f|%>
+
+  <%= render 'shared/error_messages', model: f.object %>
+
+  <div class="field">
+    <%= f.label :customer_name, "氏名" %><br />
+    <%= f.text_field :customer_name, placeholder: "例：鈴木一郎" , class: :form__string%>
+  </div>
+
+  <div class="field">
+    <%= f.label :customer_occupation, "所属" %><br />
+    <%= f.text_field :customer_occupation , placeholder: "例：浅草通信株式会社" , class: :form__string%>
+  </div>
+
+  <div class="field">
+    <%= f.label :position, "役職" %><br />
+    <%= f.text_field :position , placeholder: "例：財務経理部 経理課長" , class: :form__string%>
+  </div>
+
+  <div class="field">
+    <%= f.label :note, "備考" %><br />
+    <%= f.text_area :note, class: :form__text %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+  
+<% end %>

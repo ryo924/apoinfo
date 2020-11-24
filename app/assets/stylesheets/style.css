@@ -77,7 +77,7 @@ a {
   opacity: 0.5;
 }
 
-/* メイン */
+/* アポイント一覧表示画面 */
 
 .appointment{
   margin: 0px 20px;
@@ -233,7 +233,7 @@ position: relative;
   cursor: pointer;
 }
 
-/* 詳細ページ */
+/* アポイント詳細画面 */
 
 .appointment__wrapper{
   min-height: calc(100vh - 161px);
@@ -316,4 +316,35 @@ position: relative;
   font-size: 16px;
   color: #999;
   text-decoration: underline;
+}
+
+/* 顧客プロフィール詳細画面 */
+
+.profile__wrapper{
+  min-height: calc(100vh - 161px);
+}
+.profile_edit{
+  display: flex;
+  padding: 15px 0px;
+}
+.table{
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  width: 50%;
+}
+.table__col1{
+  text-align: left;
+  font-weight: bold;
+  background: #fafafa;
+  border-collapse: collapse;
+  border: 1px solid #f5f5f5;
+  width: 30%;
+  padding: 8px;
+}
+.table__col2{
+  text-align: left;
+  border: 1px solid #f5f5f5;
+  border-collapse: collapse;
+  width: 70%;
+  padding: 16px 8px;
 }

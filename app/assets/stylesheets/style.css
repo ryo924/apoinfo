@@ -82,6 +82,9 @@ a {
 .appointment{
   margin: 0px 20px;
 }
+.card-flex {
+  display: flex;
+}
 .page-heading {
   font-size: 30px;
   margin-bottom: 28px;
@@ -347,4 +350,31 @@ position: relative;
   border-collapse: collapse;
   width: 70%;
   padding: 16px 8px;
+}
+
+/* 検索フォーム */
+
+.search-form {
+  text-align: center;
+  padding-top: 32px;
+}
+.search-input {
+  text-align: center;
+  width: 20%;
+  height: 30px;
+  margin-right: 10px;
+}
+.search-btn {
+  width: 10%;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #87CEFA;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
 }

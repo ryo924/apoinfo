@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   resources :appointments do
     resources :comments, only: :create
     resources :profiles, only: [:new, :create, :show, :edit, :update]
+    collection do
+      get 'search'
+    end
   end
 end

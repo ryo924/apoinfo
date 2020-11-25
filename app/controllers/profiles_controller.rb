@@ -1,5 +1,10 @@
 class ProfilesController < ApplicationController
 
+  def index
+    @appointment = Appointment.find(params[:appointment_id])
+    @profiles = Profile.all.order(created_at: "DESC")
+  end
+
   def new
     @appointment = Appointment.find(params[:appointment_id])
     @profile = Profile.new
@@ -9,7 +14,7 @@ class ProfilesController < ApplicationController
     @appointment = Appointment.find(params[:appointment_id])
     @profile = Profile.new(profile_params)
     if @profile.save
-      redirect_to appointment_path(@profile.appointment)
+      redirect_to appointment_profiles_path(@appointment)
     else
       render :new
     end

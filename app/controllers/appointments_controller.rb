@@ -21,7 +21,7 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.find(params[:id])
     @comment = Comment.new
     @comments = @appointment.comments
-    @profile = Profile.find(params[:id])
+    #@profile = Profile.find(params[:id])
   end
 
   def edit

@@ -9,11 +9,7 @@
         <div class="appointment__manage">
           <%= link_to "編集する", edit_appointment_path(@appointment), class: :appointment__btn %>
           <%= link_to "削除する", appointment_path(@appointment), method: :delete, class: :appointment__btn %>
-          <% if @profile.appointment_id.blank? %>
-            <%= link_to "顧客プロフィール作成", new_appointment_profile_path(@appointment), class: :appointment__btn %>
-          <% else %>
-            <%= link_to "顧客プロフィール詳細", appointment_profile_path(@appointment), class: :appointment__btn %>
-          <% end %>
+          <%= link_to "顧客プロフィール", appointment_profiles_path(@appointment), class: :appointment__btn %>
         </div>
       <% end %>
       <div class="appointment__body">

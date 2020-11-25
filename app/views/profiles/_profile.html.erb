@@ -1,0 +1,16 @@
+<section class="card">
+  <% if @appointment.id == profile.appointment_id %>
+  <div class="card-content">
+    <h1 class="card-title">
+    <p><%= profile.customer_name %></p>
+    </h1>
+    <div class="card-text-flex">
+    <div class="card-text"><%= profile.customer_occupation %></div>
+    <div class="card-text"><%= profile.position %></div>
+    <div class="card-text"><%= profile.note%></div>
+    </div>
+  <div class="card-link">
+    <%#= link_to "詳細表示", appointment_profile_path(profile.appointment_id) %>
+  </div>
+  <% end %>
+</section>

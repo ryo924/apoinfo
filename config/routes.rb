@@ -9,4 +9,5 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+  resources :checkeds, only: [:index, :create]
 end

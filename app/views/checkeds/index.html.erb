@@ -1,0 +1,16 @@
+<h1>AjaxApp</h1>
+<%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
+  <%= form.text_field :content %>
+  <%= form.submit '投稿する' , id: "submit" %>
+<% end %>
+
+<% @checkeds.each do |checked| %>
+<div class="post">
+  <div class="post-date">
+    投稿日時：<%= checked.created_at %>
+  </div>
+  <div class="post-content">
+    <%= checked.content %>
+  </div>
+</div>
+<% end %>

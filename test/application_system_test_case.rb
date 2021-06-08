@@ -5,3 +5,6 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 end
 
 #################################33
+
+
+############プルリク練習その2
